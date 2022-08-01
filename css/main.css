@@ -13,6 +13,7 @@ header h1 {
 }
 
 .container_startPage {
+  position: absolute;
   display: grid;
   grid-template-rows: 4fr 1fr;
   grid-template-columns: 1fr 1fr;
@@ -33,17 +34,20 @@ header h1 {
 }
 .container_startPage_selection {
   text-align: center;
-  background-color: #393e46;
   margin: 10px 200px;
-  border-radius: 10px;
 }
-.container_startPage_selection p {
+.container_startPage_selection button {
+  background-color: #393e46;
   display: flex;
   flex-direction: column;
   font-size: 30px;
-  height: 200px;
-  justify-content: space-between;
+  height: 300px;
+  width: 200px;
+  justify-content: space-around;
+  align-items: center;
   font-weight: bold;
+  color: #eeeeee;
+  border-radius: 10px;
 }
 .container_startPage_startBtn {
   grid-row-start: 2;
@@ -53,6 +57,81 @@ header h1 {
   text-align: center;
 }
 .container_startPage_startBtn button {
+  font-size: 25px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #00adb5;
+  color: #eeeeee;
+}
+.container_gamePage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+.container_gamePage_players {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+.container_gamePage_players p {
+  background-color: #393e46;
+  padding: 10px 40px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+.container_gamePage_gameArea {
+  display: grid;
+  grid-template-rows: repeat(3, 2fr);
+  grid-template-columns: repeat(3, 2fr);
+  width: 250px;
+  height: 250px;
+}
+.container_gamePage_gameArea_item {
+  border: 2px #00abd5 solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container_gamePage_gameArea_item p {
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+}
+.container_gamePage_gameArea #item1 {
+  border-left: none;
+  border-top: none;
+}
+.container_gamePage_gameArea #item2 {
+  border-top: none;
+}
+.container_gamePage_gameArea #item3 {
+  border-right: none;
+  border-top: none;
+}
+.container_gamePage_gameArea #item4 {
+  border-left: none;
+}
+.container_gamePage_gameArea #item6 {
+  border-right: none;
+}
+.container_gamePage_gameArea #item7 {
+  border-left: none;
+  border-bottom: none;
+}
+.container_gamePage_gameArea #item8 {
+  border-bottom: none;
+}
+.container_gamePage_gameArea #item9 {
+  border-right: none;
+  border-bottom: none;
+}
+.container_gamePage_restart {
+  text-align: center;
+  padding: 30px;
+}
+.container_gamePage_restart button {
   font-size: 25px;
   padding: 10px 20px;
   border-radius: 10px;

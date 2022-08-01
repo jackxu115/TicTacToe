@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tic Tac Toe</title>
     <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/main.js" defer></script>
 </head>
 <body>
 <header>
@@ -15,22 +16,66 @@
 <div class="container">
     <div class="container_startPage">
         <div id="pvp" class="container_startPage_selection">
-            <p>
+            <button id="pvpBtn">
                 <span>Player</span>
                 <span>VS</span>
                 <span>Player</span>
-            </p>
+            </button>
         </div>
         <div id="pvc" class="container_startPage_selection">
-            <p>
+            <button id="pvcBtn">
                 <span>Player</span>
                 <span>VS</span>
                 <span>Computer</span>
-            </p>
+            </button>
         </div>
         <div class="container_startPage_startBtn">
-            <button>
+            <button id="startBtn">
                 Start Game
+            </button>
+        </div>
+    </div>
+    <div class="container_gamePage">
+        <div class="container_gamePage_players">
+            <div id="playerOne">
+                <p>Player One</p>
+            </div>
+            <div id="playerTwo">
+                <p>Player Two</p>
+            </div>
+        </div>
+        <div class="container_gamePage_gameArea">
+            <div id="item1" class="container_gamePage_gameArea_item">
+                <p id="dot1"></p>
+            </div>
+            <div id="item2" class="container_gamePage_gameArea_item">
+                <p id="dot2"></p>
+            </div>
+            <div id="item3" class="container_gamePage_gameArea_item">
+                <p id="dot3"></p>
+            </div>
+            <div id="item4" class="container_gamePage_gameArea_item">
+                <p id="dot4"></p>
+            </div>
+            <div id="item5" class="container_gamePage_gameArea_item">
+                <p id="dot5"></p>
+            </div>
+            <div id="item6" class="container_gamePage_gameArea_item">
+                <p id="dot6"></p>
+            </div>
+            <div id="item7" class="container_gamePage_gameArea_item">
+                <p id="dot7"></p>
+            </div>
+            <div id="item8" class="container_gamePage_gameArea_item">
+                <p id="dot8"></p>
+            </div>
+            <div id="item9" class="container_gamePage_gameArea_item">
+                <p id="dot9"></p>
+            </div>
+        </div>
+        <div class="container_gamePage_restart">
+            <button id="restartBtn">
+                Restart Game
             </button>
         </div>
     </div>
