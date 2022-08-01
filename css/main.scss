@@ -110,31 +110,31 @@ header {
         }
       }
 
-      #item1 {
+      #item0 {
         border-left: none;
+        border-top: none;
+      }
+      #item1 {
         border-top: none;
       }
       #item2 {
+        border-right: none;
         border-top: none;
       }
       #item3 {
-        border-right: none;
-        border-top: none;
-      }
-      #item4 {
         border-left: none;
+      }
+      #item5 {
+        border-right: none;
       }
       #item6 {
-        border-right: none;
+        border-left: none;
+        border-bottom: none;
       }
       #item7 {
-        border-left: none;
         border-bottom: none;
       }
       #item8 {
-        border-bottom: none;
-      }
-      #item9 {
         border-right: none;
         border-bottom: none;
       }

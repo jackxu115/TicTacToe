@@ -99,31 +99,31 @@ header h1 {
   margin: 0;
   padding: 0;
 }
-.container_gamePage_gameArea #item1 {
+.container_gamePage_gameArea #item0 {
   border-left: none;
+  border-top: none;
+}
+.container_gamePage_gameArea #item1 {
   border-top: none;
 }
 .container_gamePage_gameArea #item2 {
+  border-right: none;
   border-top: none;
 }
 .container_gamePage_gameArea #item3 {
-  border-right: none;
-  border-top: none;
-}
-.container_gamePage_gameArea #item4 {
   border-left: none;
+}
+.container_gamePage_gameArea #item5 {
+  border-right: none;
 }
 .container_gamePage_gameArea #item6 {
-  border-right: none;
+  border-left: none;
+  border-bottom: none;
 }
 .container_gamePage_gameArea #item7 {
-  border-left: none;
   border-bottom: none;
 }
 .container_gamePage_gameArea #item8 {
-  border-bottom: none;
-}
-.container_gamePage_gameArea #item9 {
   border-right: none;
   border-bottom: none;
 }
