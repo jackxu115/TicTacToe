@@ -5,12 +5,10 @@ const startPage = document.querySelector(".container_startPage")
 const gamePage = document.querySelector(".container_gamePage")
 const container = document.querySelector(".container")
 const restartBtn = document.querySelector("#restartBtn")
-const gameDot = document.querySelectorAll(".dot")
 const playerOneTag = document.querySelector("#playerOne")
 const playerTwoTag = document.querySelector("#playerTwo")
 const resultMSG = document.querySelector("#gameResult")
 const resultContent = document.querySelector(".container_gameResult")
-const gameArea = document.querySelector(".container_gamePage_gameArea")
 
 let GameChoice = null
 let PlayerOne = []
@@ -18,7 +16,7 @@ let PlayerTwo = []
 let leftNode = [0, 1, 2, 3, 4, 5, 6, 7, 8]
 let turns = 0
 const winningArray = [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]]
-let isStop = true
+let hasWinner = false
 
 const choosePVP = event => {
     elePVP.style.backgroundColor = "#00adb5"
@@ -88,7 +86,8 @@ const gameControl = (() => {
         } else {
             playMove(event, "playerOne")
             turns++
-            computerMove()
+            (hasWinner === false) && (computerMove())
+            // computerMove()
         }
     }
 
@@ -179,9 +178,11 @@ const gameControl = (() => {
         console.log(string, "winning condition")
         for (let index in winningArray) {
             if (winningArray[index].every(element => playerArray.includes(element))) {
+                hasWinner = true
                 return string
             }
         }
+        hasWinner = false
         return "none"
     }
 
