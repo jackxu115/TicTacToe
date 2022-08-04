@@ -19,6 +19,7 @@ header h1 {
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-items: center;
+  visibility: visible;
 }
 .container_startPage #pvp {
   grid-row-start: 1;
@@ -137,6 +138,22 @@ header h1 {
   border-radius: 10px;
   background-color: #00adb5;
   color: #eeeeee;
+}
+.container_gameResult {
+  visibility: hidden;
+  position: absolute;
+  top: 300px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: #00adb5;
+  height: 180px;
+  width: 100%;
+}
+.container_gameResult_message {
+  font-size: 150px;
 }
 
 /*# sourceMappingURL=main.css.map */

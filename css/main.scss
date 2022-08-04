@@ -20,7 +20,7 @@ header {
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
-    //visibility: hidden;
+    visibility: visible;
 
     #pvp {
       grid-row-start: 1;
@@ -150,6 +150,22 @@ header {
         background-color: #00adb5;
         color: #eeeeee;
       }
+    }
+  }
+  &_gameResult {
+    visibility: hidden;
+    position: absolute;
+    top: 300px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #00adb5;
+    height: 180px;
+    width: 100%;
+    &_message {
+      font-size: 150px;
     }
   }
 
